@@ -1,0 +1,16 @@
+.jumbotron {
+    font-family: 'Modak', cursive;
+    background-color: darkmagenta;
+}
+h1 {
+    font-size: 50px;
+}
+.card-title{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font: bold;
+}
+.card-body {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
