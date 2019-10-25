@@ -1,6 +1,12 @@
 function calcbdate(){
-    var male = document.getElementById("male").value;
-    var female = document.getElementById("female").value;
     var dob = document.getElementById("dob").value;
-    alert(dob);
+    var ent = new Date(dob);
+    var date = ent.getDate();
+    var month = ent.getMonth();
+    var year = ent.getFullYear();
+    alert(year);
+
+
+
+
 }
