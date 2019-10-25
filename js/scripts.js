@@ -12,7 +12,7 @@ function calcbdate(){
     var yy = parseInt(yrlst[2].concat(yrlst[3]));
 
     
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
     var girlakan = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
@@ -26,5 +26,29 @@ function calcbdate(){
 
     var dow = (date+((2.6*month)-0.2)-(2*cc)+(yy/4)+(cc/4))%7;
     var dow1 = dow.toFixed();
-    alert(dow);
+    
+
+    if(sex==="female" && dow1==="1"){
+        var akan = girlakan[0];
+    }
+    else if(sex==="female" && dow1==="2"){
+        var akan = girlakan[1];
+    }
+    else if(sex==="female" && dow1==="3"){
+        var akan = girlakan[2];
+    }
+    else if(sex==="female" && dow1==="4"){
+        var akan = girlakan[3];
+    }
+    else if(sex==="female" && dow1==="5"){
+        var akan = girlakan[4];
+    }
+    else if(sex==="female" && dow1==="6"){
+        var akan = girlakan[5];
+    }
+    else if(sex==="female" && dow1==="7"){
+        var akan = girlakan[6];
+    }
+  
+    alert("Your akan name is:"+ akan);
 }
