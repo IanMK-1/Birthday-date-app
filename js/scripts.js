@@ -11,9 +11,6 @@ function calcbdate(){
     
     var yy = parseInt(yrlst[2].concat(yrlst[3]));
 
-
-    alert(date);
-    
     
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
@@ -27,4 +24,7 @@ function calcbdate(){
         }
     }
 
+    var dow = (date+((2.6*month)-0.2)-(2*cc)+(yy/4)+(cc/4))%7;
+    var dow1 = dow.toFixed();
+    alert(dow);
 }
