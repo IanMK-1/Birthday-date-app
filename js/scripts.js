@@ -7,6 +7,11 @@ function calcbdate(){
     alert(year);
 
 
-
+    var typeofgender = document.getElementsByName("gender");
+    for(i=0; i<typeofgender.length;i++){
+        if(typeofgender[i].checked){
+            var sex = typeofgender[i].value;
+        }
+    }
 
 }
