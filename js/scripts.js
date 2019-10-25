@@ -74,5 +74,6 @@ function calcbdate(){
         var akan = manakan[6];
     }
   
-    alert("Your akan name is:"+ akan);
+    var rlt = document.getElementById("results").value= "Your Akan name is: " + akan;
+    
 }
