@@ -14,7 +14,9 @@ function calcbdate(){
     
     var days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
-    var girlakan = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+    var girlakan = ["Adwoa","Abenaa","Akua","Yaa","Afua","Ama","Akosua"];
+
+    var manakan =["Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame","Kwasi"];
 
 
     var typeofgender = document.getElementsByName("gender");
@@ -48,6 +50,28 @@ function calcbdate(){
     }
     else if(sex==="female" && dow1==="7"){
         var akan = girlakan[6];
+    }
+
+    if(sex==="male" && dow1==="1"){
+        var akan = manakan[0];
+    }
+    else if(sex==="male" && dow1==="2"){
+        var akan = manakan[1];
+    }
+    else if(sex==="male" && dow1==="3"){
+        var akan = manakan[2];
+    }
+    else if(sex==="male" && dow1==="4"){
+        var akan = manakan[3];
+    }
+    else if(sex==="male" && dow1==="5"){
+        var akan = manakan[4];
+    }
+    else if(sex==="male" && dow1==="6"){
+        var akan = manakan[5];
+    }
+    else if(sex==="male" && dow1==="7"){
+        var akan = manakan[6];
     }
   
     alert("Your akan name is:"+ akan);
