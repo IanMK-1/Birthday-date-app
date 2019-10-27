@@ -32,6 +32,8 @@
 ### Link
 [Github](https://github.com/IanMK-1/Birthday-date-app)
 
+### Contacts
+Email: iankimotho233@gmail.com
 
 ### Licence
 [The MIT License (MIT)](LICENCE.md)
