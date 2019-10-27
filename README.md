@@ -4,7 +4,7 @@
 
 #### This Birthday Date App gives you the akan name corresponding to the day of the week your were born. The akan name also depends on whether you are male or female. Males were given different akan names to females. Akan names are derived from ghanian culture.
 
-![Birthday-date-App]()
+![Birthday-date-App](/images/app.png)
 
 ## Setup/Installation Requirements
 - You will need either a computer or phone that can access the internet.
