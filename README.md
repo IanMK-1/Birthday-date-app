@@ -1,0 +1,29 @@
+# Birthday Date App
+
+#### By Ian Mwangi
+
+#### This Birthday Date App gives you the akan name corresponding to the day of the week your were born. The akan name also depends on whether you are male or female. Males were given different akan names to females. Akan names are derived from ghanian culture.
+
+![Birthday-date-App]()
+
+## Setup/Installation Requirements
+- You will need either a computer or phone that can access the internet.
+- Then you will click on the link below to go to website.
+
+### Languages used
+- HTML
+- CSS
+- Javascript
+
+### Dev Tools
+- Visual Studio code
+- Sublime Text
+- Ubuntu terminal
+- Bootstrap
+- Github
+
+### Link
+[Github](https://github.com/IanMK-1/Birthday-date-app)
+
+### Licence
+[The MIT License (MIT)](LICENCE.md)
