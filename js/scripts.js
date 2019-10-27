@@ -1,11 +1,52 @@
 function calcbdate(){
     var dob = document.getElementById("dob").value;
     var ent = new Date(dob);
-    var date = ent.getDate();
-    var month = ent.getMonth();
-    var year = ent.getFullYear();
+    var date = parseInt(ent.getDate());
+    var month = parseInt(ent.getMonth());
+    var year = parseInt(ent.getFullYear());
     
-    var yr= year.toString().split('');
+    if (month===0){
+        month=13;
+    }
+    else if(month===1){
+        month=14;
+    }
+    else if(month===2){
+        month=1;
+    }
+    else if(month===3){
+        month=2;
+    }
+    else if(month===4){
+        month=3;
+    }
+    else if(month===5){
+        month=4;
+    }
+    else if(month===6){
+        month=5;
+    }
+    else if(month===7){
+        month=6;
+    }
+    else if(month===8){
+        month=7;
+    }else if(month===9){
+        month=8;
+    }else if(month===10){
+        month=9;
+    }else if(month===11){
+        month=10;
+    }
+
+
+    if (month===13 || month===14){
+        var nw = year-1;
+    }
+    else{
+        var nw = year;
+    }
+    var yr= nw.toString().split('');
     var yrlst = yr.map(String);
     var cc = parseInt(yrlst[0].concat(yrlst[1]));
     
@@ -25,8 +66,7 @@ function calcbdate(){
             var sex = typeofgender[i].value;
         }
     }
-
-    var dow = (date+((2.6*month)-0.2)-(2*cc)+(yy/4)+(cc/4))%7;
+    var dow = (((cc/4)-(2*cc-1))+((5*yy/4))+((26*(month+1)/10))+date)%7;
     var dow1 = dow.toFixed();
     
 
@@ -75,5 +115,7 @@ function calcbdate(){
     }
   
     var rlt = document.getElementById("results").value= "Your Akan name is: " + akan;
+
+    alert(dow1);
     
 }
