@@ -6,7 +6,6 @@ function calcbdate(){
     var year = parseInt(ent.getFullYear());
     var day = ent.getDay();
 
-    
     if (month===0){
         month=11;
     }
@@ -41,7 +40,6 @@ function calcbdate(){
         month=10;
     }
 
-
     if (month===11 || month===12){
         var nw = year-1;
     }
@@ -52,14 +50,11 @@ function calcbdate(){
     var yr= nw.toString().split('');
     var yrlst = yr.map(String);
     var cc = parseInt(yrlst[0].concat(yrlst[1]));
-    
     var yy = parseInt(yrlst[2].concat(yrlst[3]));
-
 
     var girlakan = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
     var manakan =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-
 
     var typeofgender = document.getElementsByName("gender");
     for(i=0; i<typeofgender.length;i++){
@@ -141,5 +136,4 @@ function calcbdate(){
   
     var rlt = document.getElementById("results").value= "Your Akan name is: " + akan;
 
-    
 }
