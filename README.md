@@ -15,7 +15,7 @@
 - CSS
 - Javascript
 
-### Dev Tools
+### Technologies Used
 - Visual Studio code
 - Sublime Text
 - Ubuntu terminal
