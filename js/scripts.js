@@ -1,10 +1,14 @@
 function calcbdate(){
     var dob = document.getElementById("dob").value;
+    if(dob==""|| dob==null){
+        alert("Please enter a valid date");
+    }
     var ent = new Date(dob);
     var date = parseInt(ent.getDate());
     var month = parseInt(ent.getMonth());
     var year = parseInt(ent.getFullYear());
     var day = ent.getDay();
+
 
     if (month===0){
         month=11;
@@ -56,6 +60,7 @@ function calcbdate(){
 
     var manakan =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
+    
     var typeofgender = document.getElementsByName("gender");
     for(i=0; i<typeofgender.length;i++){
         if(typeofgender[i].checked){
